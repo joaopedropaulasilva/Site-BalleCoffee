@@ -1,276 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&family=Work+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Righteous&family=Work+Sans:ital@0;1&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;1,500&family=Work+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&family=Work+Sans:ital@0;1&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,685;1,685&family=Work+Sans:ital@0;1&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Work+Sans:ital@0;1&display=swap');
-
-*{
-    margin: 0%;
-    padding: 1rem;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    background: #1F1517;
-    color: white;
-}
-
-html {
-    font-family: Inter, sans-serif;
-    font-weight: 500;
-}
-a {
     text-decoration: none;
 }
 
-ul {
-    list-style: none;
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    background-attachment: fixed;
 }
 
-nav {
-    max-width: 1120px;
-    margin: auto;
-    padding: 1.5rem 10rem;
-
+.cabecalho {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-around;
+    padding: 24px;
 }
 
-.logo {
-    font-family: Teko;
-    font-size: 2rem;
-    font-weight: 600;
-    text-transform: uppercase;
+.cabecalho-imagem {
+    height: 72px;
 }
 
-.menu {
+.cabecalho-menu {
     display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    color: #FFF2E780;
+    gap: 32px;
 }
 
-.GitHub {
+.cabecalho-menu-intem {
+    font-family: Sarala, sans-serif;
     color: #FFF2E7;
-    font-weight: 600;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-.principal {
-    background: #181012;
-}
-
-.hero {
-    max-width: 1120px;
-    height: 60vh;
-    display: flex;
-    flex-direction: row; /* Alterado para alinhar os elementos na horizontal */
-    justify-content: space-between; /* Para distribuir espaço entre os elementos */
-    align-items: center;
-    gap: 2rem;
-    padding: 0rem 2rem;
-    margin: auto;
-    overflow: clip;
-}
-
-.hero-conteudo {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    column-gap: 1rem;
-    margin: 1rem;
-    width: 55%;
-}
-
-.destaque {
-    font-family: Epilogue, sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.marrom {
-    color: #A45A49
-}
-
-.amarelo {
-    color: #E7A80E;
-    text-transform: uppercase;
-}
-
-h1 {
-    color: #fff;
-    font-family: Montserrat;
-    font-size: 3.5rem;
-    font-weight: 800;
-}
-
-hr {
-    border-color: #A45A49;
-}
-
-.hero-subtituto {
-    color: #C7BAB3;
-    font-family: Inter, sans-serif;
-    font-size: 20px;
-    font-style: normal;
     font-weight: 400;
-}
-.hero-imagens {
-    max-width: 40%;
-    column-count: 4;
+    font-size: 18px;
 }
 
-.hero-imagens > figure > img {
-    width: 100%;
-    border-radius: 0.5rem;
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #fff2e750;
 }
 
-.botao-container {
-    width: 10;
-    max-width: 795px;
-    margin: auto;
-    transform: translate("0, -50%");
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
-button {
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFF2E7;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ECD6C4;
+}
+
+.conteudo-principal-escrito-botao {
+    background-color: #ECD6C4;
+    height: 60px;
+    width: 180px;
+    border-radius: 20px;
     border: none;
-    padding: 1rem;
-    border-radius: 0.5rem;
-
-    background: #A45A49;
-}
-
-.receitas {
-    display: flex;
-    flex-direction: column;
-
-    max-width: 1120px;
-    padding: 3rem 2rem;
-    margin: auto;
-    text-transform: u;
-}
-
-.receita-cabecalhos {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.receitas-titulo {
-    font-family: Montserrat, sans-serif;
-    font-size: 2rem;
-    font-weight: 700px;
-    color: #FFF2E7;
-}
-
-.receitas-subtitulo {
-    font-family: Inter;
-    font-size: 1rem;
-    font-weight: 400px;
-    color: #C7BAB3;
-}
-
-.receitas-card-conteiner {
-    padding: 0rem 10rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.receitas-card {
-    background: #241A1C;
-    padding: 2.5rem;
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    flex-basis: 40rem;
-    margin-top: 2rem;
-}
-
-.receitas-card-cabecalho {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: end;
-}
-
-.receitas-card-cabecalho-detalhes {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.receitas-titulo {
-    color: #FFF2E7;
-    font-family: Montserrat;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.receita-avaliacao {
-    color: #756A67;
-    font-family: Inter;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.receita-descricao {
-    color: #C7BAB3;
-    font-family: Inter;
-    font-size: 1rem;
+    box-shadow: 4px 5px 4px 0px #00000040;
+    font-family: Sarala;
     font-weight: 400;
+    font-size: 24px;
+    line-height: 39.13px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #2F2325;
 }
 
-.receita-autor {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
+.conteudo-principal-imagem {
+    height: 430px;
 }
 
-.receita-autor > img {
-    border-radius: 20rem;
-    width: 1.5rem;
-
-}
-
-.receita-autor-nome {
-    color: #C7BAB3;
-    font-family: Inter;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-footer {
-    padding: 4rem;
+.conteudo-secundario {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
-    background-color: #23181A;
+    gap: 24px;
+    margin-top: 48px;
 }
 
-.footer-copy {
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #fff2e750;
+    padding-top: 55px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
     color: #FFF2E7;
-    font-family: Inter;
-    font-size: 1rem;
-    font-weight: 500;
+    margin-bottom: 16px;
 }
 
-.footer-autor {
-    color: rgba(255, 242, 231, 0.50);
-    font-family: Inter;
-    font-size: 14px;
-    font-weight: 500;
+.conteudo-secundario-paragrafo {
+    font-family: Sarala, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ECD6C4;
+}
+
+.rodape {
+    border-top: 0.4px solid #fff2e750;
+    padding-top: 50px;
+}
+
+.rodape-imagem {
+  height: 48px;
+  display: block;
+  margin: 0 auto;
 }
